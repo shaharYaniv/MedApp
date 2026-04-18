@@ -6,7 +6,9 @@
       "Bash(netlify --version)",
       "Bash(vercel --version)",
       "Bash(npx --version)",
-      "Bash(gh auth *)"
+      "Bash(gh auth *)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)"
     ]
   }
 }
