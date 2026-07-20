@@ -813,3 +813,18 @@
 
 .info-row__label { color: var(--color-muted); }
 .info-row__value { font-weight: var(--font-weight-medium); color: var(--color-text); }
+
+/* ── Booking (Google Calendar embed) ── */
+.booking-frame {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.booking-frame__iframe {
+  display: block;
+  width: 100%;
+  height: min(70vh, 640px);
+  border: 0;
+}

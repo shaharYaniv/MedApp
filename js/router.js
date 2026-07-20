@@ -7,6 +7,7 @@ MediPal.Router = (function () {
     '#add-med':   function () { MediPal.Views.AddMed.render(null); },
     '#inventory': function () { MediPal.Views.Inventory.render(); },
     '#buddy':     function () { MediPal.Views.Buddy.render(); },
+    '#booking':   function () { MediPal.Views.Booking.render(); },
   };
 
   function getHash() {

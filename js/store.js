@@ -7,6 +7,7 @@ MediPal.Store = (function () {
     DOSE_LOG:    'medipal_dose_log',
     INVENTORY:   'medipal_inventory',
     BUDDY:       'medipal_buddy',
+    BOOKING:     'medipal_booking',
     STATE:       'medipal_app_state',
   };
 
@@ -175,6 +176,16 @@ MediPal.Store = (function () {
     return buddy;
   }
 
+  // ── Booking ──────────────────────────────────────────────────────
+  function getBooking() {
+    return get(KEYS.BOOKING, { url: '' });
+  }
+
+  function saveBooking(booking) {
+    set(KEYS.BOOKING, booking);
+    return booking;
+  }
+
   // ── App State ────────────────────────────────────────────────────
   function getState() {
     return get(KEYS.STATE, { onboardingComplete: false, activeView: 'dashboard' });
@@ -192,6 +203,7 @@ MediPal.Store = (function () {
     getDoseLog, getTodayDoseLog, logDose, updateDoseEntry, getDoseEntry,
     getInventory, saveInventory, decrementInventory, calculateRunOut,
     getBuddy, saveBuddy,
+    getBooking, saveBooking,
     getState, saveState
   };
 })();
